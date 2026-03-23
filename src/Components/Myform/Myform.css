@@ -1,0 +1,17 @@
+.nonvalid
+{
+    background-color: rgb(255, 205, 196);
+    color: black;
+    border: 1px solid rgb(53, 0, 70);
+    border-radius: 5px;
+    margin: 6px;
+    padding: 3px;
+}
+.valid{
+    background-color: rgb(190, 190, 229);
+    color: black;
+    border: 1px solid rgb(53, 0, 70);
+    border-radius: 5px;
+    margin: 6px;
+    padding: 3px;
+}
