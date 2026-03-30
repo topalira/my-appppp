@@ -5,14 +5,14 @@ form
 
 .valid
 {
-    /* display: none; */
+    display: none;
     /* border-color: rgb(6, 42, 222); */
     background-color: rgb(162, 248, 219);
 
 }
 .invalid
 {
-    /* display: inline; */
+    display: inline;
     color:red;
     /* background-color:rgb(235, 172, 172); */
 }

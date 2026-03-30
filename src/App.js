@@ -16,13 +16,13 @@ function App() {
     {/* <EssayForm/> */}
 
     {/* <FlavorForm/> */}
-    {/* <UserForm /> */}
+    <UserForm />
 
     {/* <FileInput/> */}
     {/* <CustomTextInput/> */}
     {/* <CustomTextInput2/> */}
 
-    <Myform/>
+    {/* <Myform/> */}
       
 
     </div>
