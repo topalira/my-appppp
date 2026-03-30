@@ -1,34 +1,80 @@
-form
-{
-    padding-left: 20px;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: -100px;
+    background-color: rgb(115, 93, 136);
 }
 
-.valid
-{
+form {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    margin-left: -150px;
+
+    border: solid 2px rgb(80, 65, 94);
+    border-radius: 10px;
+    background-color: rgb(202, 192, 229);
+    padding: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+}
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background: #594f80;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.user{
+    position: absolute;
+    width: 80px;
+    margin-left: 170px;
+}
+
+.valid {
     display: none;
     /* border-color: rgb(6, 42, 222); */
     background-color: rgb(162, 248, 219);
 
 }
-.invalid
-{
+
+.invalid {
     display: inline;
-    color:red;
+    color: red;
+    text-align: center;
     /* background-color:rgb(235, 172, 172); */
 }
 
-#Mainform{
+#Mainform {
     display: flex;
     flex-direction: column;
 }
-.item{
+
+.item {
     background-color: aquamarine;
     margin-top: 10px;
     border: 1px solid black;
     width: 200px;
     margin-left: 10px;
 }
-.none
-{
+
+.none {
     display: none;
+}
+
+.g {
+    margin-top: 100px;
 }

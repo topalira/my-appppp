@@ -4,7 +4,7 @@ export function UserForm() {
     const [state, setState] = React.useState({ name: '', age: 0, email: '', tell: '', nameValid: false, ageValid: false, emailValid: false, tellValid: false });
 
     function validateAge(age) {
-        return (age > 16 && age <= 90);
+        return (age >= 16 && age <= 90);
     }
     function validateName(name) {
         return name.length > 2;
@@ -51,28 +51,34 @@ export function UserForm() {
     var emailvalid = state.emailValid === true ? "valid" : "invalid";
     var tellvalid = state.tellValid === true ? "valid" : "invalid";
     return (
-        <form onSubmit={handleSubmit}>
-            <p>
-                <label>Имя:</label><br />
-                <input type="text" value={state.name} onChange={onNameChange} />
-                <span className={namevalid}> Больше 3х символов</span>
-            </p>
-            <p>
-                <label>Возраст:</label><br />
-                <input type="number" value={state.age} onChange={onAgeChange} />
-                <span className={agevalid}> от 16 до 90</span>
-            </p>
-            <p>
-                <label>Номер телефона:</label><br />
-                <input type="text" value={state.tell} onChange={onTellChange} />
-                <span className={tellvalid}> Должен содержать 10 символов</span>
-            </p>
-            <p>
-                <label>Почта:</label><br />
-                <input type="text" value={state.email} onChange={onEmailChange} />
-                <span className={emailvalid}> Должен содержать @</span>
-            </p>
-            <input type="submit" value="Отправить" />
-        </form>
+        <div>
+            <form onSubmit={handleSubmit}>
+                <div><img className='user' src="./aa.png" /></div>
+                <div class="g">
+
+                <p>
+                    <label>Имя:</label><br />
+                    <input type="text" value={state.name} onChange={onNameChange} />
+                    <span className={namevalid}> Больше 3х символов</span>
+                </p>
+                <p>
+                    <label>Возраст:</label><br />
+                    <input type="number" value={state.age} onChange={onAgeChange} />
+                    <span className={agevalid}> от 16 до 90</span>
+                </p>
+                <p>
+                    <label>Номер телефона:</label><br />
+                    <input type="text" value={state.tell} onChange={onTellChange} />
+                    <span className={tellvalid}> Должен содержать 10 символов</span>
+                </p>
+                <p>
+                    <label>Почта:</label><br />
+                    <input type="text" value={state.email} onChange={onEmailChange} />
+                    <span className={emailvalid}> Должен содержать @</span>
+                </p>
+                          </div>
+                <input type="submit" value="Отправить" />
+            </form>
+        </div>
     );
 }
